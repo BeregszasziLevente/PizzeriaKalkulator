@@ -1,7 +1,29 @@
 ﻿
-string nev = "Tóth Bence";
-int osszeg = 8500;
-bool torzs = false;
+Console.Write("Neve: ");
+string nev = Console.ReadLine();
+Console.Write("Rendelés összege: ");
+int osszeg = int.Parse(Console.ReadLine());
+
+bool torzs;
+
+while (true)
+{
+    Console.Write("Törzsvásárló? (igen / nem) ");
+    string torzsIn=Console.ReadLine();
+    if (torzsIn == "igen")
+    {
+        torzs = true;
+        break;
+    }
+    else if (torzsIn == "nem")
+    {
+        torzs = false; 
+        break;
+    }
+    else Console.WriteLine("Hibás válasz");
+}
+
+
 
 int szallDij;
 
