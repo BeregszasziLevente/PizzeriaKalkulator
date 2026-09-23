@@ -1,1 +1,5 @@
-﻿Console.WriteLine("Hello, World!"); 
+﻿
+string nev = "Tóth Bence";
+int osszeg = 8500;
+bool torzs = false;
+
